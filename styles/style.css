@@ -1,8 +1,3 @@
-* body {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -19,22 +14,24 @@
 .nav {
   display: flex;
   place-self: center;
+  margin-left: 15px;
 }
 
 .nav_point {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction:row;
+  width: 391.48px;
+  gap: 31.5px;
   font-family: "Raleway", "sans-serif";
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0;
+  list-style: circle;
 }
 
 .header__links-list-item {
   text-decoration: underline;
-  list-style: circle;
 }
 
 .header__links-list-item-active {
@@ -42,13 +39,13 @@
   list-style: none;
 }
 
+
 .address {
   display: flex;
   flex-direction: column;
   justify-self: end;
   align-items: flex-start;
   width: 240px;
-  height: 98px;
   margin-right: 50px;
   font-style: normal;
   font-family: "Raleway", "sans-serif";
@@ -64,6 +61,7 @@
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay {
@@ -89,19 +87,21 @@
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 100px;
-  letter-spacing: 30%;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
 .cover_text-left {
   display: block;
   text-align: start;
+  margin: 0;
 }
 
 .cover_text-center {
   display: block;
-  margin-left: 30px;
+  padding-left:25px;
   text-align: center;
+  margin: 0;
 }
 
 .cover_text-right {
@@ -124,13 +124,14 @@
   font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 17.2px;
+  letter-spacing: 0.19px;
 }
 
 .bet-button {
   width: 256px;
   height: 51px;
-  border-color: #fff;
+  border: solid 1px white;
   padding: 0;
   color: #fff;
   font-family: "Raleway", "sans-serif";
@@ -204,21 +205,21 @@
   font-size: 20px;
 }
 
-.card_one {
+.card_film {
   background-image: url(../images/card-lot-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.card_two {
+.card_book {
   background-image: url(../images/card-lot-02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.card_three {
+.card_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-position: center;
   background-size: cover;
@@ -236,7 +237,7 @@
   display: grid;
   grid-template-columns: 359px auto;
   width: 1052px;
-  height: 595px;
+  min-height: 595px;
   margin: 0 24px 180px 24px;
 }
 
@@ -261,7 +262,7 @@
 .about_column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  padding-top: 133px;
 }
 
 .about__title {
@@ -284,12 +285,12 @@
   letter-spacing: 0%;
 }
 
-.about__text__order_one {
+.about__text__top {
   order: 1;
   margin-right: 5px;
 }
 
-.about__text__order_two {
+.about__text__bottom {
   order: 2;
 }
 
@@ -315,10 +316,7 @@
   font-size: 18px;
   text-align: center;
   list-style: none;
-}
-
-.footer__menu-link {
-  text-decoration: underline;
+  
 }
 
 .footer__menu-link_active {
